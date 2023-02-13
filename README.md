@@ -1,4 +1,4 @@
-# Club Website Source Code Repository
+# Club Website Repository
 
 Welcome to the source code repository for our club website! Here you will find all the code that powers the website for our club.
 
@@ -47,7 +47,7 @@ We welcome contributions to the code! If you find a bug or want to add a new fea
 
 ## Contact
 
-If you have any questions or issues, please reach out to us by email at `club@example.com`.
+If you have any questions or issues, please reach out to us by email at `gautamrdev7@gmail.com`.
 
 ## License
 
