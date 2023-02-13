@@ -1,4 +1,4 @@
-# Club Website Source Code
+# Club Website Repository
 
 Welcome to the source code repository for our club website! Here you will find all the code that powers the website for our club.
 
