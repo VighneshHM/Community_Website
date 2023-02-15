@@ -47,7 +47,7 @@ We welcome contributions to the code! If you find a bug or want to add a new fea
 
 ## Contact
 
-If you have any questions or issues, please reach out to us by email at `gautamrdev7@gmail.com`.
+If you have any questions or issues, please reach out to us by email at `ccube@am.amrita.edu`.
 
 ## License
 
