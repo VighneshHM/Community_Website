@@ -11,12 +11,12 @@
 <body>
     <h1>Register</h1>
 
-    <form action="https://docs.google.com/spreadsheets/d/1DIdM0IrukmW2QEAwpaFMO3o0BD72QBu4A4NRxXh0a_M/edit#gid=0"
+    <form action="https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec"
         method="post">
         <fieldset>
             <legend>Account Details:</legend>
-            <label for="name">Username:</label><br>
-            <input type="text" id="name" name="name"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
             <label for="email">Enter your email:</label><br>
             <input type="email" id="email" name="email"><br>
             <label for="pwd">Password:</label><br>
@@ -29,8 +29,8 @@
             <label for="batch">Batch:</label>
             <input type="text" id="batch" name="batch"><br><br>
             Division
-            <input list="divison" name="divison">
-            <datalist id="divison">
+            <input list="division" name="division">
+            <datalist id="division">
                 <option value="A">
                 <option value="B">
                 <option value="C">
@@ -51,6 +51,8 @@
                 <option value="Networking">
                 <option value="Reversing">
                 <option value="Game Design and Development">
+                <option value="AI & ML">
+                <option value="E-Sports">
             </datalist><br><br>
             <label for="state">State:</label>
             <input type="text" id="state" name="state"><br><br>
@@ -62,14 +64,13 @@
         </fieldset>
         <fieldset>
             <legend>Social Networks:</legend>
-            <label for="instagram">Instagram:</label>
+            <label for="instagram">Instagram ID:</label>
             <input type="text" id="instagram" name="instagram"><br><br>
-            <label for="discord">Discord:</label>
+            <label for="discord">Discord ID:</label>
             <input type="text" id="discord" name="discord"><br><br>
         </fieldset>
 
         <input type="submit" value="Submit">
     </form>
 </body>
-
 </html>
