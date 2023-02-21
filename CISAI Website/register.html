@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+
+    <form action="https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec"
+        method="post">
+        <fieldset>
+            <legend>Account Details:</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch"><br><br>
+            Division
+            <input list="divison" name="divison">
+            <datalist id="divison">
+                <option value="A">
+                <option value="B">
+                <option value="C">
+                <option value="D">
+                <option value="NaN">
+            </datalist><br><br>
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo"><br><br>
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll"><br><br>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            Domain Of Interest
+            <input list="domain" name="domain">
+            <datalist id="domain">
+                <option value="Web Development">
+                <option value="Cyber Security">
+                <option value="Networking">
+                <option value="Reversing">
+                <option value="Game Design and Development">
+                <option value="AI & ML">
+                <option value="E-Sports">
+            </datalist><br><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"><br><br>
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place"><br><br>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Social Networks:</legend>
+            <label for="instagram">Instagram ID:</label>
+            <input type="text" id="instagram" name="instagram"><br><br>
+            <label for="discord">Discord ID:</label>
+            <input type="text" id="discord" name="discord"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
