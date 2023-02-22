@@ -10,9 +10,9 @@
 
 <body>
     <h1>Register</h1>
-
+    <!-- https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec -->
     <form action="https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec"
-        method="post">
+        method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Account Details:</legend>
             <label for="username">Username:</label><br>
@@ -38,7 +38,7 @@
                 <option value="NaN">
             </datalist><br><br>
             <label for="photo">Photo:</label>
-            <input type="file" id="photo" name="photo"><br><br>
+            <input type="file" id="photo" name="photo" multiple="multiple"><br><br>
             <label for="roll">Roll Number:</label>
             <input type="text" id="roll" name="roll" placeholder="AM.EN.U4XXXXXXXX" size="16"><br><br>
             <label for="dob">DOB:</label>
