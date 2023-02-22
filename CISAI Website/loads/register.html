@@ -62,8 +62,7 @@
             <label for="place">Place:<span style="color: red;">*</span></label>
             <input type="text" id="place" name="place" required><br><br>
             <label for="phone">Phone number:<span style="color: red;">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{10} required"
-                required><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
         </fieldset>
         <fieldset class="fieldset">
             <legend>Social Networks:</legend>
@@ -75,6 +74,6 @@
 
         <input type="submit" value="Submit" id="submit">
     </form>
-    <script src="CISAI Website/scripts/register.js"></script>
+    <script src="../scripts/register.js"></script>
 </body>
 </html>
