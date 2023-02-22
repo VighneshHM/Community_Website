@@ -1,22 +1,22 @@
 document.getElementById("login-btn").addEventListener('click', function () {
     console.log('Button clicked');
-    window.location = 'login.html';
+    window.location = 'loads/login.html';
     // `<iframe src="login.html" style="border-radius: 5;" title="Iframe Example"></iframe>`
 });
 
 document.getElementById("moderators-btn").addEventListener('click', function () {
     console.log('Button clicked');
-    window.location = 'moderators.html';
+    window.location = 'loads/moderators.html';
 });
 document.getElementById("members-btn").addEventListener('click', function () {
     console.log('Button clicked');
-    window.location = 'members.html';
+    window.location = 'loads/members.html';
 });
 document.getElementById("blog-btn").addEventListener('click', function () {
     console.log('Button clicked');
-    window.location = 'blog.html';
+    window.location = 'loads/blog.html';
 });
 document.getElementById("register-btn").addEventListener('click', function () {
     console.log('Button clicked');
-    window.location = 'register.html';
+    window.location = 'loads/register.html';
 });
