@@ -7,29 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/register.css">
-    <style>
-        input[type="text"] {
-          width: 210px;
-        }
-        input[list='domain'] {
-          width: 210px;
-        }
-        input[type="email"] {
-          width: 210px;
-          -webkit-transition: width .35s ease-in-out;
-          transition: width .35s ease-in-out;
-        }
-        input[type="email"]:focus {
-          width: 250px;
-        }
-        </style>
 </head>
 
 <body>
     <h1>Register</h1>
     <!-- https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec -->
     <form action="https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec"
-        method="post" enctype="multipart/form-data" name="signup-form">
+        method="post" enctype="multipart/form-data" name="myform">
         <fieldset class="fieldset">
             <legend>Account Details:</legend>
             <label for="username">Username:<span style="color: red;">*</span></label><br>
@@ -38,8 +22,8 @@
             <input type="email" id="pemail" name="pemail" placeholder="rickmonty@gmail.com" required><br>
             <label for="cemail">Enter your college email:<span style="color: red;">*</span></label><br>
             <input type="email" id="cemail" name="cemail" width="100px" height="100px" placeholder="rickmonty@am.students.amrita.edu" required><br>
-            <label for="pwd">Password:<span style="color: red;">*</span><span style="text-size-adjust: 1px;">loli</span></label><br>
-            <input type="password" id="pwd" name="pwd" pattern="[A-Za-z]{minlength='8'}" required><br><br>
+            <label for="pwd">Password:<span style="color: red;">*</span> </label><br>
+            <input type="password" id="pwd" name="pwd" pattern="[A-Za-z0-9]{minlength='8'}" title="must contain one uppercase letter one lowercase letter and one digit, min 8 characters long" required><br><br>
         </fieldset>
         <fieldset class="fieldset">
             <legend>Personal Details:</legend>
@@ -48,31 +32,31 @@
             <label for="batch">Batch:<span style="color: red;">*</span></label>
             <input type="text" id="batch" name="batch" placeholder="CSE" required><br><br>
             Division<span style="color: red;">*</span>
-            <input list="division" name="division" required>
-            <datalist id="division">
-                <option value="A">
-                <option value="B">
-                <option value="C">
-                <option value="D">
-                <option value="NaN">
-            </datalist><br><br>
+            <select name="division" onchange="showDivision(this.value)" required>
+              <option value="">Select a Division:</option>
+              <option value="A">A</option>
+              <option value="B ">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="NaN">No Division</option>
+            </select><br><br>
             <label for="photo">Photo:<span style="color: red;">*</span></label>
             <input type="file" id="photo" name="photo" multiple="multiple" required><br><br>
             <label for="roll">Roll Number:<span style="color: red;">*</span></label>
             <input type="text" id="roll" name="roll" placeholder="AM.EN.U4XXXXXXXX" size="16" required><br><br>
             <label for="dob">DOB:<span style="color: red;">*</span></label>
-            <input type="date" id="dob" name="dob" min="2000-01-01" max="2010-01-01" required><br><br>
+            <input type="date" id="dob" name="dob" min="2000-01-01" max="2009-12-31" required><br><br>
             Domain Of Interest<span style="color: red;">*</span>
-            <input list="domain" name="domain" required>
-            <datalist id="domain">
-                <option value="Web Development">
-                <option value="Cyber Security">
-                <option value="Networking">
-                <option value="Reversing">
-                <option value="Game Design and Development">
-                <option value="AI & ML">
-                <option value="E-Sports">
-            </datalist><br><br>
+            <select name="domain" onchange="showDomain(this.value)" required>
+              <option value="">Select a Division:</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Cyber Security ">Cyber Security</option>
+              <option value="Networking">Networking</option>
+              <option value="Reversing">Reversing</option>
+              <option value="Game Design and Development">Game Design and Development</option>
+              <option value="AI & ML">AI & ML</option>
+              <option value="E-Sports">E-Sports</option>
+            </select><br><br>
             <label for="country">Country of Origin:<span style="color: red;">*</span></label>
             <input type="text" id="country" name="country" required><br><br>
             <label for="state">State:<span style="color: red;">*</span></label>
