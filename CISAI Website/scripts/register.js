@@ -13,7 +13,6 @@ document.getElementById("submit").addEventListener('click', function () {
         contentType: false,
         processData: false,
         method: 'POST',
-        type: 'POST', // For jQuery < 1.9
         success: function(){
             window.location = '../loads/regSuccess.html';
         },
