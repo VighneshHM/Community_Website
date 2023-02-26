@@ -1,0 +1,27 @@
+#head-container {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 240px;
+    height: 240px;
+    border-radius: 10%;
+    margin: 20px;
+    padding: 0;
+    object-fit: cover;
+    /* border-left: 10px solid #f2f2f2;
+    border-bottom: 10px solid #f2f2f2; */
+    border: 10px solid #f2f2f2;
+}

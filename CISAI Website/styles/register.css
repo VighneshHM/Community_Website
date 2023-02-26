@@ -1,0 +1,18 @@
+.fieldset {
+    border-radius: 10px 10px 10px 10px;
+}
+
+input[type="text"] {
+    width: 210px;
+}
+input[list='domain'] {
+    width: 210px;
+}
+input[type="email"] {
+    width: 210px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+input[type="email"]:focus {
+    width: 250px;
+}

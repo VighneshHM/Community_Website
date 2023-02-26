@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+
+<body>
+    <h1>Register</h1>
+    <!-- https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec -->
+    <form action="https://script.google.com/macros/s/AKfycbwMtgyVZwt10T_DPWC8XcKXxI3ZQGTSJQYPwTEpmAGvoAcoHeR9YdeBC9Ri3vUBN7du/exec"
+        method="post" enctype="multipart/form-data" name="myform">
+        <fieldset class="fieldset">
+            <legend>Account Details:</legend>
+            <label for="username">Username:<span style="color: red;">*</span></label><br>
+            <input type="text" id="username" name="username" placeholder="rick_monty" required><br>
+            <label for="pemail">Enter your personal email:<span style="color: red;">*</span></label><br>
+            <input type="email" id="pemail" name="pemail" placeholder="rickmonty@gmail.com" required><br>
+            <label for="cemail">Enter your college email:<span style="color: red;">*</span></label><br>
+            <input type="email" id="cemail" name="cemail" width="100px" height="100px" placeholder="rickmonty@am.students.amrita.edu" required><br>
+            <label for="pwd">Password:<span style="color: red;">*</span> </label><br>
+            <input type="password" id="pwd" name="pwd" pattern="[A-Za-z0-9]{minlength='8'}" title="must contain one uppercase letter one lowercase letter and one digit, min 8 characters long" required><br><br>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Personal Details:</legend>
+            <label for="name">Name:<span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="vishnu" required><br><br>
+            <label for="batch">Batch:<span style="color: red;">*</span></label>
+            <input type="text" id="batch" name="batch" placeholder="CSE" required><br><br>
+            Division<span style="color: red;">*</span>
+            <select name="division" onchange="showDivision(this.value)" required>
+              <option value="">Select a Division:</option>
+              <option value="A">A</option>
+              <option value="B ">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="NaN">No Division</option>
+            </select><br><br>
+            <label for="photo">Photo:<span style="color: red;">*</span></label>
+            <input type="file" id="photo" name="photo" multiple="multiple" required><br><br>
+            <label for="roll">Roll Number:<span style="color: red;">*</span></label>
+            <input type="text" id="roll" name="roll" placeholder="AM.EN.U4XXXXXXXX" size="16" required><br><br>
+            <label for="dob">DOB:<span style="color: red;">*</span></label>
+            <input type="date" id="dob" name="dob" min="2000-01-01" max="2009-12-31" required><br><br>
+            Domain Of Interest<span style="color: red;">*</span>
+            <select name="domain" onchange="showDomain(this.value)" required>
+              <option value="">Select a Division:</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Cyber Security ">Cyber Security</option>
+              <option value="Networking">Networking</option>
+              <option value="Reversing">Reversing</option>
+              <option value="Game Design and Development">Game Design and Development</option>
+              <option value="AI & ML">AI & ML</option>
+              <option value="E-Sports">E-Sports</option>
+            </select><br><br>
+            <label for="country">Country of Origin:<span style="color: red;">*</span></label>
+            <input type="text" id="country" name="country" required><br><br>
+            <label for="state">State:<span style="color: red;">*</span></label>
+            <input type="text" id="state" name="state" required><br><br>
+            <label for="place">Place:<span style="color: red;">*</span></label>
+            <input type="text" id="place" name="place" required><br><br>
+            <label for="phone">Phone number:<span style="color: red;">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Social Networks:</legend>
+            <label for="instagram">Instagram ID:</label>
+            <input type="text" id="instagram" name="instagram"><br><br>
+            <label for="discord">Discord ID:</label>
+            <input type="text" id="discord" name="discord"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>
