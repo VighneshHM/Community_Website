@@ -38,7 +38,7 @@ img{
 }
 .pf-info{
     display: flex;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
 }
